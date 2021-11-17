@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <div class="chat__wrapper">
+        <div class="chat__area" id="chat__area"></div>
+        <div class="comment__wrapper">
+            <div class="comment__area">
+                <div class="comment__area-user">    
+                    <div class="area__user-pic">
+                        <img id="avatar" width="50" height="50" class="user-pic"/>
+                    </div>
+                    <div>
+                        <label for="your-name">Your Name</label><br/>
+                        <input type="text" id="your-name" required/>*<br/>
+                    </div>
+                </div>
+                <label for="comment">Write your comment:</label><br/>
+                <textarea rows="10" cols="120" id="comment"></textarea>
+                <div class="picture__area">
+                    <label for="userPicture">Upload your picture</label>
+                    <input type="file" accept="image/gif, image/jpeg, image/png" name="image" id="userPicture" onchange="loadFile(event)"/>
+                </div>
+            </div>
+            <div> 
+                <div class="comment__error" id="errorMessage"></div>
+                <button class="comment__btn" type="button" id="addcomment">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

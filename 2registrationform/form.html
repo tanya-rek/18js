@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="screen__background-image">
+        <div class="screen__background">
+            <div class="form__wrapper">
+                <h1 class="form__title">Create your account</h1>
+                <input class="form__input" id="firstname" type="text" placeholder="First name*">
+                <input class="form__input" id="lastname" type="text" placeholder="Last name*">
+                <input class="form__input" id="email" type="email" placeholder="Email*">
+                <input class="form__input" id="password" type="password" minlength="5" placeholder="Password*">
+                <input class="form__input input-last" id="repeat-password" type="password" minlength="5" placeholder="Repeat password*">
+                <div class="form__warning-message" id="warnmessage"></div>
+                <button class="form__btn" type="submit" id="button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
