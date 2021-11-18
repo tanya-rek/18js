@@ -15,10 +15,15 @@
 
 .form__wrapper {
     width: 30%;
-    height: 70%;
+    height: 75%;
     border: 1px solid black;
     background-color: white;
     padding: 0px 70px 20px 70px;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
